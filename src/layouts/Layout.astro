@@ -1,0 +1,84 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import '@fontsource-variable/dancing-script';
+import '@fontsource/great-vibes';
+import '@fontsource/poppins';
+import '@fontsource-variable/lexend';
+import paris from '/src/assets/images/paris_2.png';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<!-- Primary Meta Tags -->
+		<title>Isis & Alex - 19 de Octubre de 2024</title>
+		<meta name="title" content="Isis & Alex - 19 de Octubre de 2024" />
+		<meta name="description" content="Únete a nuestra boda el 19 de octubre de 2024 en una romántica ceremonia.  ¡Explora nuestro sitio para más información y para acompañarnos en este viaje hacia el día más feliz de nuestras vidas" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://isisyalex.com" />
+		<meta property="og:title" content="Isis & Alex - 19 de Octubre de 2024" />
+		<meta property="og:description" content="Únete a nuestra boda el 19 de octubre de 2024 en una romántica ceremonia.  ¡Explora nuestro sitio para más información y para acompañarnos en este viaje hacia el día más feliz de nuestras vidas" />
+		<meta property="og:image" content={ paris.src } />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://isisyalex.com" />
+		<meta property="twitter:title" content="Isis & Alex - 19 de Octubre de 2024" />
+		<meta property="twitter:description" content="Únete a nuestra boda el 19 de octubre de 2024 en una romántica ceremonia.  ¡Explora nuestro sitio para más información y para acompañarnos en este viaje hacia el día más feliz de nuestras vidas" />
+		<meta property="twitter:image" content={ paris.src } />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: Poppins, sans-serif;
+		background: #ffffff;
+		background-size: 224px;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	.separator-sm {
+    border: 1px solid;
+    width: 20%;
+	}
+	.separator-md {
+    border: 1px solid;
+    width: 40%;
+	}
+	.separator-lg {
+    border: 1px solid;
+    width: 60%;
+	}
+</style>
