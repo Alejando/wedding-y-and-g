@@ -14,28 +14,28 @@ const {
 ---
 
 <div class="flex flex-col items-center border-2 mx-5 mt-10 p-2">
-  <div class="bg-platinum p-5 border w-full">
+  <div class="bg-textPrimary p-5 border w-full">
     <div class="text-center">
-        <div class="text-dusty_blue font-optional text-4xl">{title}</div>
-        <div class="bg-beige inline-block p-4 m-5 rounded-full border text-white">
+        <div class="text-textPrimary font-optional text-4xl">{title}</div>
+        <div class="bg-primary inline-block p-4 m-5 rounded-full border text-secondary">
           <Icon name={icon} size={30} />
         </div>
     </div>
     <div class="flex flex-col items-center justify-center my-2">
-      <div class="center text-dusty_blue">
+      <div class="center text-textPrimary">
         <Icon name="calendar" size={25}/>
       </div>
       <div class="text-xl mx-auto">{day}</div>
       <div class="text-md">{date}</div>
     </div>
     <div class="flex flex-col items-center justify-center my-2">
-      <div class="center text-dusty_blue">
+      <div class="center text-textPrimary">
         <Icon name="clock" size={25}/>
       </div>
       <div class="text-xl mx-auto">{time}</div>
     </div>
     <div class="flex flex-col items-center justify-center my-2">
-      <div class="center text-dusty_blue">
+      <div class="center text-textPrimary">
         <Icon name="location" size={25}/>
       </div>
       <div class="text-xl font-optional mx-auto mb-2">
@@ -50,7 +50,7 @@ const {
         }
       </div>
       <div class="text-xs text-center">{address}</div>
-      <a href={map} target="_blank" class="bg-vanilla-500 text-white font-title text-xl px-5 py-2 mt-10 hover:bg-vanilla-600 ">Ir al mapa</a>
+      <a href={map} target="_blank" class="bg-background text-white font-title text-xl px-5 py-2 mt-10 hover:bg-accent ">Ir al mapa</a>
     </div>
   </div>
 </div>

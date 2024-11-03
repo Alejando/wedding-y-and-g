@@ -20,6 +20,11 @@ export default {
 				208: '52rem',
 			},
 			colors:{
+				primary: '#046307',       // Verde Esmeralda
+        secondary: '#FFFFFF',     // Blanco Floral
+        accent: '#D4AF37',        // Dorado Suave
+        background: '#F5F5DC',    // Beige Claro
+        textPrimary: '#0A2449',    // Azul Oxford
 				beige: '#F6F2E7',
 				light_blue: '#C2E0F4',
 				strong_blue: '#113654',
@@ -73,11 +78,11 @@ export default {
 				}
 			},
 			fontFamily: {
-				main: ['Great Vibes'],
-				wedding: ['Dancing Script Variable'],
-				titles: ['Dancing Script Variable'],
-				body: ['Poppins'],
-				subtitle: ['Lexend Variable']
+				main: ['Playfair Display'],
+				wedding: ['Sacramento'],
+				titles: ['Libre Baskerville'],
+				body: ['Lora'],
+				subtitle: ['Quicksand']
 			},
 		},
 	},
