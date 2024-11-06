@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
 const { title, icon, day, date, time, place, description, map, link, address } = Astro.props;
-import line from '/src/assets/images/line.png';
+import line from '/src/assets/images/line1.png';
 ---
 
 <div class="basis-1 lex flex-col items-center border-2 border-textPrimary mt-10 p-2 shadow-xl">
@@ -12,7 +12,7 @@ import line from '/src/assets/images/line.png';
       <div class="text-4xl text-textPrimary font-main">{date}</div>
       <div class="text-2xl text-textPrimary font-main">{day} {time}</div>
 
-      <div class="text-primary inline-block mt-5 rounded-full">
+      <div class="text-accent inline-block mt-5 rounded-full">
         <Icon name={icon} size={40} />
       </div>
       <div class="text-md text-primary mx-auto mb-2">
@@ -31,10 +31,10 @@ import line from '/src/assets/images/line.png';
       </div>
     </div>
     <div class="flex flex-col py-3 px-2 items-center justify-center mt-5">
-      <div class="center text-primary">
+      <div class="center text-accent">
         <Icon name="location" size={20}/>
       </div>
-      <div class="text-xxs text-center text-textPrimary mt-2">{address}</div>
+      <div class="text-xxs text-center text-primary mt-2">{address}</div>
       <a href={map} target="_blank" class="border rounded-full border-textPrimary text-textPrimary font-body text-sm p-2 mt-3 hover:bg-accent/40">
         Ir al mapa
       </a>

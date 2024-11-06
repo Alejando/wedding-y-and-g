@@ -1,7 +1,7 @@
 // Countdown.jsx
 import { useState, useEffect } from 'preact/hooks';
 import TimeBox from './TimeBox.jsx';
-import line from '/src/assets/images/line_perl.png';
+import line from '/src/assets/images/line2.png';
 
 
 const Countdown = () => {
@@ -39,10 +39,10 @@ const Countdown = () => {
 
   return (
     // <div class="text-center min-h-96 bg-strong_beige py-16 px-8">
-    <div id="cuenta_regresiva" class="bg-cover bg-center min-h-176 bg-[url('/src/assets/images/hands.jpeg')]">
+    <div id="cuenta_regresiva" class="bg-cover bg-center min-h-176 bg-[url('/src/assets/images/photo3.jpeg')]">
        <div class="text-center min-h-96 py-32 px-8 h-full bg-black bg-opacity-70">
         <h2 class="text-6xl font-titles text-secondary">¡El gran día se acerca!</h2>
-        {/* <img alt="separador" class="mx-auto mt-1 mb-16 max-w-64" src={line.src}/> */}
+        <img alt="separador" class="mx-auto mt-1 mb-16 max-w-64" src={line.src}/>
         {/* <p class="text-background mt-24" >Nuestra boda es en:</p> */}
         <div class="grid grid-cols-2 gap-4 place-content-center mt-4 max-w-96 mx-auto">
           <TimeBox time={days} label="Días" />
@@ -55,7 +55,7 @@ const Countdown = () => {
         </div>
         <div class="mt-10">
           <a
-            href="https://forms.gle/TskYWyJ335dZ4ySf6"
+            href="https://forms.gle/SFzAMDjunUdRTc4S7"
             target="_blank"
             class="border rounded-full border-background text-background font-body text-2xl px-10 py-4 hover:bg-accent/60 "
           >

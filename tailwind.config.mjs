@@ -20,7 +20,7 @@ export default {
 				208: '52rem',
 			},
 			colors:{
-				primary: '#046307',       // Verde Esmeralda
+				primary: '#143E38',       // Verde Esmeralda
         secondary: '#FFFFFF',     // Blanco Floral
         accent: '#D4AF37',        // Dorado Suave
         background: '#F5F5DC',    // Beige Claro
